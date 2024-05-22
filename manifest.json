@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "U PROXY",
+    "description": "基本的代理切换工具",
+    "version": "0.0.1",
+    "icons": {
+        "16": "./icon16.png",
+        "48": "./icon48.png",
+        "128": "./icon128.png"
+    },
+    "action": {
+        "default_popup": "./packages/popup/dist/index.html",
+        "default_icon": {
+            "16": "icon16.png",
+            "48": "icon48.png",
+            "128": "icon128.png"
+        }
+    },
+    "options_page": "./packages/setting/dist/index.html",
+    "background": {
+        "service_worker": "./service/dist/index.js",
+        "type": "module"
+    },
+    "permissions": [
+        "proxy",
+        "tabs",
+        "storage",
+        "webRequest"
+    ],
+    "host_permissions": [
+        "*://*/*"
+    ]
+}

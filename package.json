@@ -1,0 +1,21 @@
+{
+  "name": "u-proxy",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build/build.js",
+    "build:watch": "node build/watch.js",
+    "dev": "node build/dev.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "^5.16.4"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.266",
+    "@types/node": "^20.12.7"
+  }
+}
